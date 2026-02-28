@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Local Service Marketplace</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body class="bg-gradient-to-r from-indigo-900 via-purple-900 to-black text-white">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between p-5 bg-black/40 backdrop-blur-lg">
+
+<h1 class="text-2xl font-bold">
+⚡ ServiceHub
+</h1>
+
+<div class="space-x-5">
+<a href="/" class="hover:text-yellow-400">Home</a>
+<a href="/accounts/register/" class="hover:text-yellow-400">Register</a>
+<a href="/admin/" class="hover:text-yellow-400">Admin</a>
+</div>
+
+</nav>
+
+<div class="p-10">
+{% block content %}
+{% endblock %}
+</div>
+
+</body>
+</html>
